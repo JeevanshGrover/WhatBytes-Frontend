@@ -113,7 +113,7 @@ export const products = [
     price: 199,
     category: "Home",
     brand: "ComfortPlus",
-    image: "https://images.unsplash.com/photo-1580481072645-022f9a6d83d0?w=800&auto=format&fit=crop&q=80",
+    image: "https://images.unsplash.com/photo-1688578735352-9a6f2ac3b70a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     rating: 4.7,
     reviewsCount: 154,
     description: "High-back mesh ergonomic office chair with adjustable lumbar support, 3D armrests, and smooth synchro-tilt recline mechanism.",
