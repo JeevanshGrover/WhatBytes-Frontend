@@ -76,7 +76,7 @@ export default function ProductDetailPage({ params }) {
       </Link>
 
       <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-slate-200 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-        <div className="relative w-full h-80 sm:h-96 md:h-[450px] bg-slate-50 rounded-xl overflow-hidden border border-slate-100 flex items-center justify-center p-4">
+        <div className="relative w-full h-80 sm:h-96 md:h-112.5 bg-slate-50 rounded-xl overflow-hidden border border-slate-100 flex items-center justify-center p-4">
           <Image
             src={product.image}
             alt={product.name}
