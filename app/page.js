@@ -1,9 +1,12 @@
-import Image from "next/image";
+import Sidebar from "@/components/Sidebar";
+import ProductGrid from "@/components/ProductGrid";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div>
-      Helloooo
+    <div className="flex flex-col md:flex-row gap-8 items-start">
+      <Sidebar />
+
+      <ProductGrid />
     </div>
   );
 }
