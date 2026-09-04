@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { CartProvider } from "@/context/CartContext";
@@ -15,13 +16,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-slate-50 text-slate-900 antialiased flex flex-col min-h-screen">
         <CartProvider>
-          <FilterProvider>
-            <Header />
-            <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              {children}
-            </main>
-            <Footer />
-          </FilterProvider>
+          <Suspense fallback={null}>
+            <FilterProvider>
+              <Header />
+              <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                {children}
+              </main>
+              <Footer />
+            </FilterProvider>
+          </Suspense>
         </CartProvider>
       </body>
     </html>
